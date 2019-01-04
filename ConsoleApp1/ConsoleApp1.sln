@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repetition_Checkpoints", "ConsoleApp1\Repetition_Checkpoints.csproj", "{EB97EEEC-27CF-4FFF-9BB9-F58719E56623}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repetition_CheckpointsTests", "Repetition_CheckpointsTests\Repetition_CheckpointsTests.csproj", "{A51CE17C-47B8-4CBE-911D-F4FEE138FDCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EB97EEEC-27CF-4FFF-9BB9-F58719E56623}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB97EEEC-27CF-4FFF-9BB9-F58719E56623}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB97EEEC-27CF-4FFF-9BB9-F58719E56623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A51CE17C-47B8-4CBE-911D-F4FEE138FDCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51CE17C-47B8-4CBE-911D-F4FEE138FDCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51CE17C-47B8-4CBE-911D-F4FEE138FDCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51CE17C-47B8-4CBE-911D-F4FEE138FDCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

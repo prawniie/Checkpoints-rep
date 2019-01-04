@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repetition_Checkpoints
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -14,8 +14,11 @@ namespace Repetition_Checkpoints
             //Checkpoint1 c = new Checkpoint1();
             //c.Checkpoint_one();
 
-            Checkpoint2 c2 = new Checkpoint2();
-            c2.Checkpoint_two();
+            //Checkpoint2 c2 = new Checkpoint2();
+            //c2.Checkpoint_two();
+
+            Checkpoint3 c3 = new Checkpoint3();
+            c3.Checkpoint_three();
             
 
         }
