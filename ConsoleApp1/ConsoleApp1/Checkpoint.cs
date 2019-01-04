@@ -11,17 +11,52 @@ namespace ConsoleApp1
 
         public void Checkpoint1()
         {
-            Console.Write("Write command: ");
-            string input = Console.ReadLine();
 
-            string[] commands = input.Split('-');
-
-            foreach (var command in commands)
+            while (true)
             {
-                int size = 0;
-                int.TryParse(command, out size);
+                Console.Write("Write command: ");
+                string input = Console.ReadLine();
 
-                PrintTriangle(size);
+                if (input.ToLower() == "exit")
+                {
+                    break;
+                }
+
+                string[] commands = input.Split('-');
+                int size = 0;
+
+                foreach (var command in commands)
+                {
+                    if (command.Contains('A'))
+                    {
+                        string sizeString = command.Remove(0,1);
+                        int.TryParse(sizeString, out size);
+                        PrintTriangle(size);
+                    }
+                    else if (command.Contains('B'))
+                    {
+                        string sizeString = command.Remove(0, 1);
+                        int.TryParse(sizeString, out size);
+                        PrintTriangleUpSideDown(size);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, I didn't understand. Try again!");
+                        continue;
+                    }
+                }
+            }
+        }
+
+        private void PrintTriangleUpSideDown(int size)
+        {
+            for (int i = 0; size > i ; size--)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
             }
         }
 
