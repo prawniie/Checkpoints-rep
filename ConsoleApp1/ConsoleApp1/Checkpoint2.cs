@@ -34,7 +34,7 @@ namespace Repetition_Checkpoints
         }
 
 
-        private string AskUserForRooms()
+        public string AskUserForRooms()
         {
             Console.WriteLine("\n--------------------------------------------------------------------\n");
             Console.WriteLine("Enter room name (write 'exit' to quit): ");
@@ -42,7 +42,7 @@ namespace Repetition_Checkpoints
             return input;
         }
 
-        private bool ValidateInput(string input)
+        public bool ValidateInput(string input)
         {
             string inputFormat = @"^\s?[a-zA-Z]+ [1-9]\d?m2 (On|Off)\s?$";
 
@@ -61,7 +61,7 @@ namespace Repetition_Checkpoints
             return true;
         }
 
-        private List<Room> CreateListOfRooms(string input)
+        public List<Room> CreateListOfRooms(string input)
         {
             List<Room> listOfRooms = new List<Room>();
 
@@ -82,7 +82,7 @@ namespace Repetition_Checkpoints
             return listOfRooms;
         }
 
-        private void PrintRooms(List<Room> listOfRooms)
+        public void PrintRooms(List<Room> listOfRooms)
         {
             int counter = 1;
 
@@ -94,7 +94,7 @@ namespace Repetition_Checkpoints
             }
         }
 
-        private void PrintLitUpRooms(List<Room> listOfRooms)
+        public void PrintLitUpRooms(List<Room> listOfRooms)
         {
             Console.WriteLine();
 
@@ -106,7 +106,7 @@ namespace Repetition_Checkpoints
             }
         }
 
-        private void PrintLargestRoom(List<Room> listOfRooms)
+        public void PrintLargestRoom(List<Room> listOfRooms)
         {
             var largestRoom = listOfRooms.OrderByDescending(room => room.Size).First();
 
@@ -114,7 +114,7 @@ namespace Repetition_Checkpoints
 
         }
 
-        private void PrintNumberOfRooms(List<Room> listOfRooms)
+        public void PrintNumberOfRooms(List<Room> listOfRooms)
         {
             var numberOfRooms = listOfRooms.Count();
             WriteGreen($"The apartment has {numberOfRooms} rooms");
