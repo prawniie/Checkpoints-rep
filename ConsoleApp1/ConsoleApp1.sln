@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{EB97EEEC-27CF-4FFF-9BB9-F58719E56623}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repetition_Checkpoints", "ConsoleApp1\Repetition_Checkpoints.csproj", "{EB97EEEC-27CF-4FFF-9BB9-F58719E56623}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

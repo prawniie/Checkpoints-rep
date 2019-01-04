@@ -4,16 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace Repetition_Checkpoints
 {
     class Program
     {
         static void Main(string[] args)
         {
 
-            Checkpoint c = new Checkpoint();
+            //Checkpoint1 c = new Checkpoint1();
+            //c.Checkpoint_one();
 
-            c.Checkpoint1();
+            Checkpoint2 c2 = new Checkpoint2();
+            c2.Checkpoint_two();
             
 
         }

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace Repetition_Checkpoints
 {
-    public class Checkpoint
+    public class Checkpoint1
     {
 
-        public void Checkpoint1()
+        public void Checkpoint_one()
         {
 
             while (true)
@@ -71,11 +71,5 @@ namespace ConsoleApp1
                 Console.WriteLine("*");
             }
         }
-
-        public void Checkpoint2()
-        {
-            //Checkpoint2
-        }
-
     }
 }
